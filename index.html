@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webp</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SHQ0QLFYL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9SHQ0QLFYL');
+  </script>
+
+
+  <body>
+    <div id="app"></div>
+
+    <div id="AppLoading">
+      <style>
+        .app-loading{
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: #217FD5ee;
+          backdrop-filter: blur(5px);
+          z-index: 100;
+        }
+        .app-loading-wrap{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+          text-align: center;
+        }
+        .app-logo{
+          width: 100px;
+          margin-bottom: 20px;
+        }
+        .loading-text{
+          font-size: 14px;
+          border-left: 2px solid #fff;
+          border-right: 2px solid #fff;
+          padding: 0 20px;
+          animation: 0.3s infinite alternate loading-dash;
+        }
+
+        @keyframes loading-dash {
+          from {
+            opacity: 0.5;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+
+      <div class="app-loading">
+        <div class="app-loading-wrap">
+          <div class="loading-text">LOADING</div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
